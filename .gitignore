@@ -1,0 +1,5 @@
+*.dcm
+*.png
+Procfile
+setup.sh 
+*.ipynb
