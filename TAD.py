@@ -190,13 +190,13 @@ if dcm is not None :
 
         if getback :
             st.session_state["points_3point"]= st.session_state["points_3point"][:-1]
-            st.experimental_rerun()
+            st.rerun()
         if refresh : 
             st.session_state["points_length"]= []
             st.session_state["points_cobbs"] = []
             st.session_state["points_3point"]= []
             st.session_state["points_2point"]= []
-            st.experimental_rerun()
+            st.rerun()
         
 #         if drawing_mode == 'Length' : 
 #             # draw = ImageDraw.Draw(img) 
@@ -296,7 +296,7 @@ if dcm is not None :
 
                 if getback :
                     st.session_state["points_2point"]= st.session_state["points_2point"][:-1]
-                    st.experimental_rerun()
+                    st.rerun()
     #             if refresh : 
 
     #                 st.experimental_rerun()
@@ -308,7 +308,7 @@ if dcm is not None :
                 point = value["x"] * (W/700) , value["y"] * (W/700) 
                 if point not in st.session_state["points_2point"]:
                     st.session_state["points_2point"].append(point)
-                    st.experimental_rerun() 
+                    st.rerun() 
         
         
                     
@@ -354,7 +354,7 @@ if dcm is not None :
                 
             if getback :
                 st.session_state["points_cobbs"]= st.session_state["points_cobbs"][:-1]
-                st.experimental_rerun()
+                st.rerun()
 #             if refresh : 
                 
 #                 st.experimental_rerun()
@@ -366,7 +366,7 @@ if dcm is not None :
                 point = value["x"], value["y"]  
                 if point not in st.session_state["points_cobbs"]:
                     st.session_state["points_cobbs"].append(point)
-                    st.experimental_rerun() 
+                    st.rerun() 
         
 
         value = streamlit_image_coordinates(img, width =700, key="pil2")
@@ -375,7 +375,7 @@ if dcm is not None :
             point = value["x"] * (W/700) , value["y"] * (W/700)
             if point not in st.session_state["points_3point"]:
                 st.session_state["points_3point"].append(point)
-                st.experimental_rerun()
+                st.rerun()
 
         
         # st.experimental_rerun()

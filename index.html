@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-language README</title>
+    <style>
+        .lang-button {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .lang-button:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="lang-button" onclick="showContent('english')">English</button>
+        <button class="lang-button" onclick="showContent('korean')">한국어</button>
+    </div>
+    <div id="english" class="content active">
+        <h1>Introduction</h1>
+        <p>Hello, I am a resident in the Department of Orthopedic Surgery at Seoul National University Hospital.</p>
+        <p>Arc center distance can be a useful parameter in assessing fractures in joints, such as ankle fractures or mallet fingers.</p>
+        <p>(Kim, M. B., Lee, J. H., & Lee, Y. H. (2022). Arc center distance as a novel quantitative radiographic parameter for volar Barton fractures. Archives of Orthopaedic and Trauma Surgery, 142(12), 3765-3770. <a href="https://doi.org/10.1007/s00402-021-04240-0" target="_blank">https://doi.org/10.1007/s00402-021-04240-0</a>)</p>
+        <p>This program helps you upload an X-ray (DICOM file), select three points that make up each joint, and measure the distance between the centers of each circle.</p>
+
+        <h1>Usage</h1>
+        <ol>
+            <li>Access <a href="http://leejm1031.synology.me:8888" target="_blank">http://leejm1031.synology.me:8888</a></li>
+            <li>Click "Browse files" or drag and drop an image to upload.</li>
+            <li>Click three points on a joint. Confirm that a circle is drawn and then click three points on another joint to draw the remaining circle.</li>
+            <li>The undo and refresh buttons are located on the sidebar.</li>
+        </ol>
+        <p>* The length is measured based on the pixel-to-length ratio in the DICOM file, but sometimes this information is missing or stored differently in the DICOM file. In such cases, a warning may appear. Please contact jaeminlee.1996@gmail.com for modifications to improve future development.</p>
+
+        <h1>Future Development Plans</h1>
+        <p>A PyQT-based program that can be used without web access is planned.</p>
+    </div>
+    <div id="korean" class="content">
+        <h1>소개</h1>
+        <p>안녕하세요. 저는 서울대학교병원 정형외과 소속의 레지던트입니다.</p>
+        <p>Ankle fracture나 mallet finger 등 관절에서의 골절에 있어서 정도를 판단하는데에 arc center distance는 유용한 파라미터가 될 수 있습니다.</p>
+        <p>(Kim, M. B., Lee, J. H., & Lee, Y. H. (2022). Arc center distance as a novel quantitative radiographic parameter for volar Barton fractures. Archives of Orthopaedic and Trauma Surgery, 142(12), 3765-3770. <a href="https://doi.org/10.1007/s00402-021-04240-0" target="_blank">https://doi.org/10.1007/s00402-021-04240-0</a>)</p>
+        <p>이 프로그램은 X-ray를 업로드하고(DICOM 파일), 관절을 이루는 세 점씩 클릭하여 선택한 후에 각 원의 중심의 거리를 측정하는 데에 도움을 주는 프로그램입니다.</p>
+
+        <h1>자세한 사용법</h1>
+        <ol>
+            <li><a href="http://leejm1031.synology.me:8888" target="_blank">http://leejm1031.synology.me:8888</a> 에 접속</li>
+            <li>Browse files를 누르거나, Drag and drop으로 이미지를 업로드한다.</li>
+            <li>한 관절에 대해 세 점을 클릭한다. 원이 그려지는 것을 확인하고 다른 관절에 대해 세 점을 클릭하여 나머지 원이 그려지는 것을 확인한다.</li>
+            <li>되돌리는 버튼과 Refresh 버튼은 사이드바에 있다.</li>
+        </ol>
+        <p>* DICOM 파일에서의 픽셀 : 길이 비율을 가지고 길이를 측정하지만 때에 따라 해당 정보가 없거나 파라미터가 다르게 저장되어있는 DICOM 파일도 있습니다. 그런 경우 경고창이 뜰 수 있으며 추후 개발을 위해 jaeminlee.1996@gmail.com 으로 연락주시면 변경하도록 하겠습니다.</p>
+
+        <h1>추후 개발 계획</h1>
+        <p>웹 접속 없이 쓸 수 있는 PyQT 기반 프로그램 개발 예정.</p>
+    </div>
+    <script>
+        function showContent(language) {
+            document.querySelectorAll('.content').forEach(div => {
+                div.classList.remove('active');
+            });
+            document.getElementById(language).classList.add('active');
+        }
+    </script>
+</body>
+</html>
