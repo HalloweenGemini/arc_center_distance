@@ -65,10 +65,12 @@ class DicomViewer(QMainWindow):
     def setMode3_3(self):
         self.mode = '3+3'
         self.resetPoints()
+        self.autoClickAndUndo()
 
     def setMode3_2(self):
         self.mode = '3+2'
         self.resetPoints()
+        self.autoClickAndUndo()
 
     def openDicom(self):
         options = QFileDialog.Options()
