@@ -21,8 +21,8 @@ This program helps you upload an X-ray (DICOM file), select three points that ma
 ## Executable file
 A PyQT-based program has been released. The usage method is the same.
 ### Download
-- [Downloadlink_MAC](./acd_pyqt_v0.2.app)
-- [Downloadlink_WIN](./acd_pyqt_v0.2.exe)
+- [Downloadlink_MAC](https://github.com/HalloweenGemini/arc_center_distance/raw/main/acd_pyqt_v0.2.zip)
+- [Downloadlink_WIN](https://github.com/HalloweenGemini/arc_center_distance/raw/main/acd_pyqt_v0.2.exe)
 
 
 </details>
@@ -50,7 +50,7 @@ PyQT 기반의 실행파일이 배포되었습니다.
 실행 방법은 동일합니다. 
 
 ### Download
-- [Downloadlink_MAC](./acd_pyqt_v0.2.app)
-- [Downloadlink_WIN](./acd_pyqt_v0.2.exe)
+- [Downloadlink_MAC](https://github.com/HalloweenGemini/arc_center_distance/raw/main/acd_pyqt_v0.2.zip)
+- [Downloadlink_WIN](https://github.com/HalloweenGemini/arc_center_distance/raw/main/acd_pyqt_v0.2.exe)
 
 </details>
