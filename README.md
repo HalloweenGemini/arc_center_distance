@@ -18,9 +18,12 @@ This program helps you upload an X-ray (DICOM file), select three points that ma
 
 * The length is measured based on the pixel-to-length ratio in the DICOM file, but sometimes this information is missing or stored differently in the DICOM file. In such cases, a warning may appear. Please contact jaeminlee.1996@gmail.com for modifications to improve future development.
 
-## Future Development Plans
+## Executable file
+A PyQT-based program has been released. The usage method is the same.
+### Download
+- [Downloadlink_MAC](./acd_pyqt_v0.2.app)
+- [Downloadlink_WIN](./acd_pyqt_v0.2.exe)
 
-A PyQT-based program that can be used without web access is planned.
 
 </details>
 
@@ -42,8 +45,12 @@ Ankle fracture나 mallet finger 등 관절에서의 골절에 있어서 정도�
 
 * DICOM 파일에서의 픽셀 : 길이 비율을 가지고 길이를 측정하지만 때에 따라 해당 정보가 없거나 파라미터가 다르게 저장되어있는 DICOM 파일도 있습니다. 그런 경우 경고창이 뜰 수 있으며 추후 개발을 위해 jaeminlee.1996@gmail.com 으로 연락주시면 변경하도록 하겠습니다.
 
-## 추후 개발 계획
+## 실행파일 
+PyQT 기반의 실행파일이 배포되었습니다. 
+실행 방법은 동일합니다. 
 
-웹 접속 없이 쓸 수 있는 PyQT 기반 프로그램 개발 예정.
+### Download
+- [Downloadlink_MAC](./acd_pyqt_v0.2.app)
+- [Downloadlink_WIN](./acd_pyqt_v0.2.exe)
 
 </details>
