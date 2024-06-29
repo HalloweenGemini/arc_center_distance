@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arc-Center-Distance calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">Arc-Center-Distance calculator</h1>
+            <div class="nav-buttons">
+                <button id="resetButton">Refresh</button>
+                <button id="undoButton">Undo</button>
+                <button id="mode3_3Button">3+3 mode</button>
+                <button id="mode3_2Button">3+2 mode</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <input type="file" id="fileInput" accept=".dcm">
+        <div id="distanceLabel">Distance: N/A</div>
+        <div style="max-width: 1200px; max-height: 1200px; overflow: auto;">
+            <canvas id="imageCanvas"></canvas>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
