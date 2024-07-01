@@ -24,7 +24,10 @@ class DicomViewer(QMainWindow):
         self.hbox = QHBoxLayout()
 
         self.label = QLabel(self)
-        self.label.setFixedSize(700, 500)
+        # set size of label to fit the window
+        self.label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        # self.label.setAlignment(Qt.AlignCenter)
+        # self.label.setFixedSize(700, 500)
 
         self.openButton = QPushButton('Open DICOM', self)
         self.openButton.clicked.connect(self.openDicom)
@@ -61,6 +64,12 @@ class DicomViewer(QMainWindow):
         self.mode = '3+3'
 
         self.show()
+
+    def resizeEvent(self, event):
+        super().resizeEvent(event)
+        # print(f"Resized: {self.width()} x {self.height()}")
+        self.label.resize(self.width(), self.height() - 100)  # 예시로 높이를 조정하는 코드
+        self.updateImage()
 
     def setMode3_3(self):
         self.mode = '3+3'
