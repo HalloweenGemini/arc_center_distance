@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    background-color: #FFB6C1; /* 연한 핑크색 */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-title {
+    color: #333;
+    margin: 0;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#distanceLabel {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#imageCanvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    max-width: 100%;
+    height: auto;
+}
