@@ -8,7 +8,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog, QLabel, QPus
 from PyQt5.QtGui import QPixmap, QImage, QPainter, QPen
 from PyQt5.QtCore import Qt, QPoint
 
-class DicomViewer(QMainWindow):
+class DicomViewer(QMainWindow): 
     def __init__(self):
         super().__init__()
         self.initUI()
