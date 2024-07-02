@@ -77,17 +77,32 @@
         <div id="english" class="content active">
             <h1>Introduction</h1>
             <p>Hello, I am a resident in the Department of Orthopedic Surgery at Seoul National University Hospital.</p>
-            <p>Arc center distance can be a useful parameter in assessing fractures in joints, such as ankle fractures or mallet fingers.</p>
+            <p>Arc center distance (ACD) can be a useful parameter in assessing fractures in joints, such as ankle fractures or mallet fingers. The ACD concept was first introduced for ankle joints (Kwon et al., 2020. <a href="https://doi.org/10.1016/j.injury.2020.03.064" target="_blank">https://doi.org/10.1016/j.injury.2020.03.064</a>) and has since been applied to other joints like the elbow (Kim et al., 2021. <a href="https://doi.org/10.1007/s00402-021-03934-9" target="_blank">https://doi.org/10.1007/s00402-021-03934-9</a>).</p>
+            <p>The ACD concept can be applied to all hinge joints, including the ankle, wrist, and elbow, making it a versatile tool for orthopedic assessment.</p>
             <p>(Kim, M. B., Lee, J. H., & Lee, Y. H. (2022). Arc center distance as a novel quantitative radiographic parameter for volar Barton fractures. Archives of Orthopaedic and Trauma Surgery, 142(12), 3765-3770. <a href="https://doi.org/10.1007/s00402-021-04240-0" target="_blank">https://doi.org/10.1007/s00402-021-04240-0</a>)</p>
-            <p>This program helps you upload an X-ray (DICOM file), select three points that make up each joint, and measure the distance between the centers of each circle.</p>
+            <p>This program helps you upload an X-ray (DICOM file), select points that make up each joint, and measure the distance between the centers of each circle.</p>
 
             <h2>Usage</h2>
+            <h3>Stable Version: <a href="http://leejm1031.synology.me:8888" target="_blank">http://leejm1031.synology.me:8888</a></h3>
             <ol>
-                <li>Access <a href="http://leejm1031.synology.me:8888" target="_blank">http://leejm1031.synology.me:8888</a></li>
+                <li>Access the stable version link above.</li>
                 <li>Click "Browse files" or drag and drop an image to upload.</li>
-                <li>Click three points on a joint. Confirm that a circle is drawn and then click three points on another joint to draw the remaining circle.</li>
+                <li>Choose between two modes:
+                    <ul>
+                        <li>3 point circle only: Click three points on each joint to draw circumscribed circles.</li>
+                        <li>2 point and radius: Click two points and specify a radius to draw circles.</li>
+                    </ul>
+                </li>
                 <li>The undo and refresh buttons are located on the sidebar.</li>
             </ol>
+
+            <h3>Beta Version: <a href="http://leejm1031.synology.me:8889" target="_blank">http://leejm1031.synology.me:8889</a></h3>
+            <p>In the beta version, you can try the new 3+3 and 3+2 modes:</p>
+            <ul>
+                <li>3+3 mode: Click three points on each joint. The program will draw two circumscribed circles and measure the distance between their centers.</li>
+                <li>3+2 mode: Click three points on the first joint and two points on the second joint. The program will draw two circles with the same diameter and measure the distance between their centers.</li>
+            </ul>
+
             <p>* The length is measured based on the pixel-to-length ratio in the DICOM file, but sometimes this information is missing or stored differently in the DICOM file. In such cases, a warning may appear. Please contact jaeminlee.1996@gmail.com for modifications to improve future development.</p>
 
             <h2>Executable file</h2>
@@ -99,19 +114,34 @@
         </div>
         <div id="korean" class="content">
             <h1>소개</h1>
-            <p>안녕하세요. 저는 서울대학교병원 정형외과 소속의 레지던트입니다.</p>
-            <p>Ankle fracture나 mallet finger 등 관절에서의 골절에 있어서 정도를 판단하는데에 arc center distance는 유용한 파라미터가 될 수 있습니다.</p>
+            <p>안녕하세요. 서울대학교병원 정형외과 레지던트입니다.</p>
+            <p>Arc center distance (ACD)는 발목 골절이나 망치 수지 등 관절 골절의 정도를 평가하는 데 유용한 지표입니다. ACD 개념은 처음 발목 관절에 적용되었고(Kwon et al., 2020. <a href="https://doi.org/10.1016/j.injury.2020.03.064" target="_blank">https://doi.org/10.1016/j.injury.2020.03.064</a>), 이후 팔꿈치 관절 등 다른 관절에도 적용되었습니다(Kim et al., 2021. <a href="https://doi.org/10.1007/s00402-021-03934-9" target="_blank">https://doi.org/10.1007/s00402-021-03934-9</a>).</p>
+            <p>ACD 개념은 발목, 손목, 팔꿈치 등 모든 경첩 관절에 적용할 수 있어 정형외과적 평가에 다양하게 활용할 수 있습니다.</p>
             <p>(Kim, M. B., Lee, J. H., & Lee, Y. H. (2022). Arc center distance as a novel quantitative radiographic parameter for volar Barton fractures. Archives of Orthopaedic and Trauma Surgery, 142(12), 3765-3770. <a href="https://doi.org/10.1007/s00402-021-04240-0" target="_blank">https://doi.org/10.1007/s00402-021-04240-0</a>)</p>
-            <p>이 프로그램은 X-ray를 업로드하고(DICOM 파일), 관절을 이루는 세 점씩 클릭하여 선택한 후에 각 원의 중심의 거리를 측정하는 데에 도움을 주는 프로그램입니다.</p>
+            <p>이 프로그램은 X-ray(DICOM 파일)를 업로드하고, 각 관절을 구성하는 점들을 선택한 후 각 원의 중심 간 거리를 측정하는 데 도움을 줍니다.</p>
 
-            <h2>자세한 사용법</h2>
+            <h2>사용 방법</h2>
+            <h3>안정 버전: <a href="http://leejm1031.synology.me:8888" target="_blank">http://leejm1031.synology.me:8888</a></h3>
             <ol>
-                <li><a href="http://leejm1031.synology.me:8888" target="_blank">http://leejm1031.synology.me:8888</a> 에 접속합니다.</li>
-                <li>Browse files를 누르거나, Drag and drop으로 이미지를 업로드합니다.</li>
-                <li>한 관절에 대해 세 점을 클릭합니다. 원이 그려지는 것을 확인하고 다른 관절에 대해 세 점을 클릭하여 나머지 원이 그려지는 것을 확인합니다.</li>
-                <li>되돌리는 버튼과 Refresh 버튼은 사이드바에 있습니다.</li>
+                <li>위의 안정 버전 링크에 접속합니다.</li>
+                <li>"Browse files"를 클릭하거나 이미지를 드래그 앤 드롭하여 업로드합니다.</li>
+                <li>두 가지 모드 중 선택합니다:
+                    <ul>
+                        <li>3점 원 그리기: 각 관절에 세 점을 클릭하여 외접원을 그립니다.</li>
+                        <li>2점과 반지름: 두 점을 클릭하고 반지름을 지정하여 원을 그립니다.</li>
+                    </ul>
+                </li>
+                <li>되돌리기 및 새로고침 버튼은 사이드바에 있습니다.</li>
             </ol>
-            <p>* DICOM 파일에서의 픽셀 : 길이 비율을 가지고 길이를 측정하지만 때에 따라 해당 정보가 없거나 파라미터가 다르게 저장되어 있는 DICOM 파일도 있습니다. 그런 경우 경고창이 뜰 수 있으며 추후 개발을 위해 jaeminlee.1996@gmail.com 으로 연락주시면 변경하도록 하겠습니다.</p>
+
+            <h3>베타 버전: <a href="http://leejm1031.synology.me:8889" target="_blank">http://leejm1031.synology.me:8889</a></h3>
+            <p>베타 버전에서는 새로운 3+3 모드와 3+2 모드를 사용해 볼 수 있습니다:</p>
+            <ul>
+                <li>3+3 모드: 각 관절에 세 점씩 클릭합니다. 프로그램이 두 외접원을 그리고 그 중심 간 거리를 측정합니다.</li>
+                <li>3+2 모드: 첫 번째 관절에 세 점, 두 번째 관절에 두 점을 클릭합니다. 프로그램이 동일한 직경의 두 원을 그리고 그 중심 간 거리를 측정합니다.</li>
+            </ul>
+
+            <p>* DICOM 파일의 픽셀 대 길이 비율을 기반으로 길이를 측정하지만, 때로는 이 정보가 없거나 다르게 저장된 경우가 있습니다. 이런 경우 경고 메시지가 나타날 수 있습니다. 향후 개선을 위해 jaeminlee.1996@gmail.com으로 연락 주시면 감사하겠습니다.</p>
 
             <h2>실행파일</h2>
             <p>PyQT 기반의 실행파일이 배포되었습니다.</p>
